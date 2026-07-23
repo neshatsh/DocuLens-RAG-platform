@@ -11,6 +11,7 @@ Run:
 """
 from __future__ import annotations
 import argparse
+import math
 import re
 import sys
 from pathlib import Path
@@ -120,6 +121,7 @@ def evaluate_retrieval(
 
     hits = 0
     mrr_total = 0.0
+    ndcg_total = 0.0
     total = 0
 
     for i, pair in enumerate(pairs):
@@ -155,17 +157,19 @@ def evaluate_retrieval(
         if hit_rank:
             hits += 1
             mrr_total += 1.0 / hit_rank
+            ndcg_total += 1.0 / math.log2(hit_rank + 1)
 
         total += 1
         if (i + 1) % 20 == 0:
             logger.info(
                 f"  Evaluated {i+1}/{len(pairs)} pairs | "
-                f"hit_rate={hits/total:.3f} | mrr={mrr_total/total:.3f}"
+                f"hit_rate={hits/total:.3f} | mrr={mrr_total/total:.3f} | ndcg={ndcg_total/total:.3f}"
             )
 
     metrics = {
         f"hit_rate_at_{top_k}": hits / total if total > 0 else 0.0,
         "mrr": mrr_total / total if total > 0 else 0.0,
+        f"ndcg_at_{top_k}": ndcg_total / total if total > 0 else 0.0,
         "total_evaluated": total,
         "top_k": top_k,
     }
