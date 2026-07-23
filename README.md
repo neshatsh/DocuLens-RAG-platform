@@ -187,10 +187,10 @@ python scripts/evaluate.py --max-samples 100 --top-k 5 --per-document  # per-doc
 
 Two evaluation modes via the `--per-document` flag:
 
-| Mode | Hit Rate@5 | MRR | What it measures |
-|------|-----------|-----|-----------------|
-| **Per-document** (`--per-document`) | **0.71** | **0.47** | Clause-finding within a known contract (aligned with CUAD-QA design) |
-| Cross-corpus (default) | 0.13 | 0.11 | Finding the right clause across all 200 ingested contracts |
+| Mode | Hit Rate@5 | MRR | NDCG@5 | What it measures |
+|------|-----------|-----|--------|-----------------|
+| **Per-document** (`--per-document`) | **0.71** | **0.47** | **0.53** | Clause-finding within a known contract (aligned with CUAD-QA design) |
+| Cross-corpus (default) | 0.13 | 0.11 | 0.11 | Finding the right clause across all 200 ingested contracts |
 
 | Parameter | Value |
 |-----------|-------|
