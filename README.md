@@ -204,42 +204,82 @@ Two evaluation modes via the `--per-document` flag:
 
 **Earlier versions used a decontextualized excerpt corpus (`theatticusproject/cuad` on HuggingFace) that did not align with the CUAD-QA gold answers, producing invalid near-zero scores (Hit Rate@5=0.02, MRR=0.013). This has been corrected.** Ingestion now uses the official CUAD v1 full contract `.txt` files from the Atticus Project, matched 1-to-1 with the contract titles in CUAD-QA.
 
+## Validation
+
+Beyond the retrieval benchmark above, this pipeline has been independently
+validated - a conceptual design review plus empirical testing for
+faithfulness, citation accuracy, reproducibility, and prompt-injection
+robustness. Full write-up: [`reports/DocuLens_Validation_Report.md`](reports/DocuLens_Validation_Report.md).
+
+Summary of findings:
+
+- **Retrieval:** fully deterministic across repeated runs (chunk Jaccard = 1.00)
+- **Citations:** 0/46 fabricated - the model never cited a source it wasn't given
+- **Faithfulness:** 0.59 (ragas) on a 42-item CUAD gold set - flagged as below target, with specifics in the report
+- **Red-teaming:** 1/5 prompt-injection variants got through initially; one was fixed via a prompt change, the other remains an open issue with a proposed fix
+
+Run it yourself:
+
+```bash
+python validation/benchmark_dataset.py
+python validation/faithfulness_eval.py
+python validation/citation_verification.py
+python validation/reproducibility_test.py
+python validation/redteam/prompt_injection.py
+python validation/report_generator.py
+```
+
 ## Project Structure
 
 ```
 doculens/
 ├── src/
 │   ├── ingestion/
-│   │   ├── pdf_extractor.py    # pdfplumber + PyMuPDF fallback
-│   │   ├── vlm_extractor.py    # GPT-4V for scanned pages
-│   │   ├── text_cleaner.py     # unicode, hyphenation, headers
-│   │   ├── chunker.py          # token-aware semantic chunker
-│   │   ├── embedder.py         # sentence-transformers
-│   │   └── pipeline.py         # orchestrator
+│   │   ├── pdf_extractor.py       # pdfplumber + PyMuPDF fallback
+│   │   ├── vlm_extractor.py       # GPT-4V for scanned pages
+│   │   ├── text_cleaner.py        # unicode, hyphenation, headers
+│   │   ├── chunker.py             # token-aware semantic chunker
+│   │   ├── embedder.py            # sentence-transformers
+│   │   └── pipeline.py            # orchestrator
 │   ├── retrieval/
-│   │   ├── vector_store.py     # ChromaDB wrapper
-│   │   ├── retriever.py        # dense retrieval (bi-encoder)
-│   │   └── reranker.py         # precision scoring (cross-encoder)
+│   │   ├── vector_store.py        # ChromaDB wrapper
+│   │   ├── retriever.py           # dense retrieval (bi-encoder)
+│   │   └── reranker.py            # precision scoring (cross-encoder)
 │   ├── generation/
-│   │   ├── prompt_builder.py   # RAG prompt engineering
-│   │   ├── llm_client.py       # OpenAI / Anthropic client
-│   │   └── answer_generator.py # full RAG pipeline
+│   │   ├── prompt_builder.py      # RAG prompt engineering + anomaly-awareness rules
+│   │   ├── llm_client.py          # OpenAI / Anthropic client
+│   │   └── answer_generator.py    # full RAG pipeline
 │   ├── api/
-│   │   ├── main.py             # FastAPI app
-│   │   ├── routes.py           # endpoint handlers
-│   │   ├── schemas.py          # Pydantic request/response models
-│   │   └── dependencies.py     # dependency injection
+│   │   ├── main.py                # FastAPI app
+│   │   ├── routes.py              # endpoint handlers
+│   │   ├── schemas.py             # Pydantic request/response models
+│   │   └── dependencies.py        # dependency injection
 │   └── utils/
-│       ├── config.py           # Pydantic settings
-│       ├── logger.py           # Loguru structured logging
-│       └── metrics.py          # MRR, Recall@K, NDCG@K
+│       ├── config.py              # Pydantic settings
+│       ├── logger.py              # Loguru structured logging
+│       └── metrics.py             # MRR, Recall@K, NDCG@K
 ├── tests/
-│   ├── unit/                   # TextCleaner, Chunker, Retriever, Schemas
-│   └── integration/            # Full API endpoint tests
+│   ├── unit/                      # TextCleaner, Chunker, Retriever, Schemas,
+│   │   │                          #   corpus alignment, validation utilities
+│   │   └── test_validation_utils.py  # citation regex, Jaccard, injection classifier
+│   └── integration/               # full API endpoint tests
 ├── scripts/
-│   ├── download_cuad_v1.py     # Download CUAD v1 full contracts from Atticus Project
-│   ├── ingest_cuad.py          # Ingest full contracts into ChromaDB
-│   └── evaluate.py             # Retrieval evaluation + MLflow (--per-document flag)
+│   ├── download_cuad_v1.py        # download CUAD v1 full contracts (Atticus Project)
+│   ├── ingest_cuad.py             # ingest full contracts into ChromaDB (cuad_v1 collection)
+│   └── evaluate.py                # retrieval eval + MLflow (--per-document flag)
+├── validation/
+│   ├── benchmark_dataset.py       # build 42-item gold Q&A set from CUAD-QA
+│   ├── faithfulness_eval.py       # ragas faithfulness / precision / recall / relevancy
+│   ├── citation_verification.py   # detect fabricated or unsupported citations
+│   ├── reproducibility_test.py    # chunk Jaccard + answer overlap across 5 runs
+│   ├── report_generator.py        # assemble reports/DocuLens_Validation_Report.md
+│   ├── conceptual_review.md       # design-level risk analysis (pre-empirical)
+│   ├── redteam/
+│   │   └── prompt_injection.py    # 5-variant adversarial injection test
+│   ├── data/                      # benchmark.json (generated)
+│   └── results/                   # per-run JSON results (generated)
+├── reports/
+│   └── DocuLens_Validation_Report.md  # full MRM validation write-up
 ├── docker/Dockerfile
 ├── docker-compose.yml
 └── requirements.txt
