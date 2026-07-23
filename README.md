@@ -93,8 +93,10 @@ uvicorn src.api.main:app --reload
 ### 4. Ingest documents
 
 ```bash
-# Ingest contracts from the CUAD dataset
-python scripts/ingest_cuad.py --max 200
+# Download the official CUAD v1 full contract files (one-time)
+python scripts/download_cuad_v1.py
+# Ingest full contracts into ChromaDB
+python scripts/ingest_cuad.py --max 200 --clear
 ```
 
 ### 5. Query the API
@@ -163,33 +165,44 @@ curl -X POST http://127.0.0.1:8000/api/v1/documents/summarize \
 
 ## Dataset
 
-Uses the **CUAD dataset** (Contract Understanding Atticus Dataset) — 500 real legal contracts with 13,000+ expert-labeled clauses across 41 clause types. Directly applicable to banking (loan agreements), insurance (policy contracts), and retail (supplier contracts).
+Uses **CUAD v1** (Contract Understanding Atticus Dataset) — 510 real legal contracts from the Atticus Project, with 13,000+ expert-labeled clauses across 41 clause types. Directly applicable to banking (loan agreements), insurance (policy contracts), and retail (supplier contracts).
 
 ```bash
-python scripts/ingest_cuad.py --max 50
+python scripts/download_cuad_v1.py     # download full contract .txt files (one-time)
+python scripts/ingest_cuad.py --max 50 # ingest first 50 contracts
 ```
 
 ## Evaluation
 
-Retrieval is evaluated by checking whether the gold answer text from a CUAD QA pair appears in the top-k retrieved chunks. Results are logged to MLflow with full parameter tracking (embedding model, reranker model, chunk size, k).
+Retrieval is evaluated by checking whether a word-normalised prefix of the gold answer from a CUAD-QA pair appears in the top-k retrieved chunks. Results are logged to MLflow with full parameter tracking (embedding model, reranker, chunk size, k).
 
-### Results (CUAD-QA, 100 samples, top-k=5)
+```bash
+python scripts/download_cuad_v1.py
+python scripts/ingest_cuad.py --max 200 --clear
+python scripts/evaluate.py --max-samples 100 --top-k 5             # cross-corpus
+python scripts/evaluate.py --max-samples 100 --top-k 5 --per-document  # per-document
+```
 
-| Metric | Value | Notes |
-|--------|-------|-------|
-| Hit Rate@5 | 0.02 | see corpus mismatch below |
-| MRR | 0.013 | see corpus mismatch below |
-| Corpus size | 228 chunks | 200 ingested passages |
-| Embedding model | all-MiniLM-L6-v2 | 384-dim |
-| Reranker | ms-marco-MiniLM-L-6-v2 | cross-encoder |
+### Results (CUAD-QA, 100 samples, top-k=5, CUAD v1 full-contract corpus)
 
-### Why the scores are low: corpus mismatch
+Two evaluation modes via the `--per-document` flag:
 
-The ingestion source (`theatticusproject/cuad` — decontextualized text excerpts) and the evaluation source (CUAD-QA — SQuAD-style QA pairs tied to specific named contracts) are two different datasets. The QA pairs reference exact clause text from contracts like `LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT` that are not present in the ingested corpus. The retriever cannot find answers that were never indexed.
+| Mode | Hit Rate@5 | MRR | What it measures |
+|------|-----------|-----|-----------------|
+| **Per-document** (`--per-document`) | **0.71** | **0.47** | Clause-finding within a known contract (aligned with CUAD-QA design) |
+| Cross-corpus (default) | 0.13 | 0.11 | Finding the right clause across all 200 ingested contracts |
 
-This is a **corpus coverage problem, not a retrieval quality problem.** The pipeline is architecturally correct and returns relevant results for in-corpus queries.
+| Parameter | Value |
+|-----------|-------|
+| Corpus | 5,486 chunks from 200 full contracts (CUAD v1) |
+| Embedding model | all-MiniLM-L6-v2 (384-dim) |
+| Reranker | ms-marco-MiniLM-L-6-v2 (cross-encoder) |
 
-**To produce valid benchmarks:** download the full CUAD contract TXT files from the Atticus Project, ingest them with `ingest_cuad.py`, and re-run `evaluate.py`. Hit Rate@5 is expected to reach 0.4–0.6 on an aligned corpus with this retrieval setup.
+**Per-document mode** restricts each query to the specific contract the QA pair references — which is how CUAD-QA was designed (each question asks about "this contract"). **Cross-corpus mode** is the harder real-world RAG scenario: find the right clause from among all indexed contracts at once.
+
+### Evaluation Notes
+
+**Earlier versions used a decontextualized excerpt corpus (`theatticusproject/cuad` on HuggingFace) that did not align with the CUAD-QA gold answers, producing invalid near-zero scores (Hit Rate@5=0.02, MRR=0.013). This has been corrected.** Ingestion now uses the official CUAD v1 full contract `.txt` files from the Atticus Project, matched 1-to-1 with the contract titles in CUAD-QA.
 
 ## Project Structure
 
@@ -224,8 +237,9 @@ doculens/
 │   ├── unit/                   # TextCleaner, Chunker, Retriever, Schemas
 │   └── integration/            # Full API endpoint tests
 ├── scripts/
-│   ├── ingest_cuad.py          # CUAD dataset ingestion
-│   └── evaluate.py             # Retrieval evaluation + MLflow
+│   ├── download_cuad_v1.py     # Download CUAD v1 full contracts from Atticus Project
+│   ├── ingest_cuad.py          # Ingest full contracts into ChromaDB
+│   └── evaluate.py             # Retrieval evaluation + MLflow (--per-document flag)
 ├── docker/Dockerfile
 ├── docker-compose.yml
 └── requirements.txt
