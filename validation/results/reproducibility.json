@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "run_at": "2026-07-22T21:27:12.985312",
+    "n_queries": 15,
+    "n_runs_per_query": 5,
+    "chunk_jaccard_threshold": 0.8,
+    "answer_overlap_threshold": 0.6
+  },
+  "aggregate": {
+    "avg_chunk_jaccard": 1.0,
+    "avg_answer_overlap": 0.962,
+    "high_variance_queries": 0,
+    "total_queries": 15
+  },
+  "items": [
+    {
+      "id": "governing_law_000",
+      "question": "Highlight the parts (if any) of this contract related to \"Governing Law\" that should be reviewed by a lawyer. Details: W",
+      "category": "Governing Law",
+      "n_valid_runs": 5,
+      "avg_chunk_jaccard": 1.0,
+      "min_chunk_jaccard": 1.0,
+      "avg_answer_overlap": 0.9234,
+      "min_answer_overlap": 0.8,
+      "high_variance": false
+    },
+    {
+      "id": "governing_law_001",
+      "question": "Highlight the parts (if any) of this contract related to \"Governing Law\" that should be reviewed by a lawyer. Details: W",
+      "category": "Governing Law",
+      "n_valid_runs": 5,
+      "avg_chunk_jaccard": 1.0,
+      "min_chunk_jaccard": 1.0,
+      "avg_answer_overlap": 1.0,
+      "min_answer_overlap": 1.0,
+      "high_variance": false
+    },
+    {
+      "id": "governing_law_002",
+      "question": "Highlight the parts (if any) of this contract related to \"Governing Law\" that should be reviewed by a lawyer. Details: W",
+      "category": "Governing Law",
+      "n_valid_runs": 5,
+      "avg_chunk_jaccard": 1.0,
+      "min_chunk_jaccard": 1.0,
+      "avg_answer_overlap": 0.9161,
+      "min_answer_overlap": 0.8654,
+      "high_variance": false
+    },
+    {
+      "id": "governing_law_003",
+      "question": "Highlight the parts (if any) of this contract related to \"Governing Law\" that should be reviewed by a lawyer. Details: W",
+      "category": "Governing Law",
+      "n_valid_runs": 5,
+      "avg_chunk_jaccard": 1.0,
+      "min_chunk_jaccard": 1.0,
+      "avg_answer_overlap": 0.9179,
+      "min_answer_overlap": 0.8413,
+      "high_variance": false
+    },
+    {
+      "id": "governing_law_004",
+      "question": "Highlight the parts (if any) of this contract related to \"Governing Law\" that should be reviewed by a lawyer. Details: W",
+      "category": "Governing Law",
+      "n_valid_runs": 5,
+      "avg_chunk_jaccard": 1.0,
+      "min_chunk_jaccard": 1.0,
+      "avg_answer_overlap": 0.9409,
+      "min_answer_overlap": 0.875,
+      "high_variance": false
+    },
+    {
+      "id": "governing_law_005",
+      "question": "Highlight the parts (if any) of this contract related to \"Governing Law\" that should be reviewed by a lawyer. Details: W",
+      "category": "Governing Law",
+      "n_valid_runs": 5,
+      "avg_chunk_jaccard": 1.0,
+      "min_chunk_jaccard": 1.0,
+      "avg_answer_overlap": 1.0,
+      "min_answer_overlap": 1.0,
+      "high_variance": false
+    },
+    {
+      "id": "governing_law_006",
+      "question": "Highlight the parts (if any) of this contract related to \"Governing Law\" that should be reviewed by a lawyer. Details: W",
+      "category": "Governing Law",
+      "n_valid_runs": 5,
+      "avg_chunk_jaccard": 1.0,
+      "min_chunk_jaccard": 1.0,
+      "avg_answer_overlap": 1.0,
+      "min_answer_overlap": 1.0,
+      "high_variance": false
+    },
+    {
+      "id": "cap_on_liability_000",
+      "question": "Highlight the parts (if any) of this contract related to \"Cap On Liability\" that should be reviewed by a lawyer. Details",
+      "category": "Cap On Liability",
+      "n_valid_runs": 5,
+      "avg_chunk_jaccard": 1.0,
+      "min_chunk_jaccard": 1.0,
+      "avg_answer_overlap": 0.9624,
+      "min_answer_overlap": 0.9457,
+      "high_variance": false
+    },
+    {
+      "id": "cap_on_liability_001",
+      "question": "Highlight the parts (if any) of this contract related to \"Cap On Liability\" that should be reviewed by a lawyer. Details",
+      "category": "Cap On Liability",
+      "n_valid_runs": 5,
+      "avg_chunk_jaccard": 1.0,
+      "min_chunk_jaccard": 1.0,
+      "avg_answer_overlap": 0.9289,
+      "min_answer_overlap": 0.8791,
+      "high_variance": false
+    },
+    {
+      "id": "cap_on_liability_002",
+      "question": "Highlight the parts (if any) of this contract related to \"Cap On Liability\" that should be reviewed by a lawyer. Details",
+      "category": "Cap On Liability",
+      "n_valid_runs": 5,
+      "avg_chunk_jaccard": 1.0,
+      "min_chunk_jaccard": 1.0,
+      "avg_answer_overlap": 0.9942,
+      "min_answer_overlap": 0.9903,
+      "high_variance": false
+    },
+    {
+      "id": "cap_on_liability_003",
+      "question": "Highlight the parts (if any) of this contract related to \"Cap On Liability\" that should be reviewed by a lawyer. Details",
+      "category": "Cap On Liability",
+      "n_valid_runs": 5,
+      "avg_chunk_jaccard": 1.0,
+      "min_chunk_jaccard": 1.0,
+      "avg_answer_overlap": 0.9691,
+      "min_answer_overlap": 0.9238,
+      "high_variance": false
+    },
+    {
+      "id": "cap_on_liability_004",
+      "question": "Highlight the parts (if any) of this contract related to \"Cap On Liability\" that should be reviewed by a lawyer. Details",
+      "category": "Cap On Liability",
+      "n_valid_runs": 5,
+      "avg_chunk_jaccard": 1.0,
+      "min_chunk_jaccard": 1.0,
+      "avg_answer_overlap": 0.9961,
+      "min_answer_overlap": 0.9902,
+      "high_variance": false
+    },
+    {
+      "id": "cap_on_liability_005",
+      "question": "Highlight the parts (if any) of this contract related to \"Cap On Liability\" that should be reviewed by a lawyer. Details",
+      "category": "Cap On Liability",
+      "n_valid_runs": 5,
+      "avg_chunk_jaccard": 1.0,
+      "min_chunk_jaccard": 1.0,
+      "avg_answer_overlap": 0.9609,
+      "min_answer_overlap": 0.9022,
+      "high_variance": false
+    },
+    {
+      "id": "cap_on_liability_006",
+      "question": "Highlight the parts (if any) of this contract related to \"Cap On Liability\" that should be reviewed by a lawyer. Details",
+      "category": "Cap On Liability",
+      "n_valid_runs": 5,
+      "avg_chunk_jaccard": 1.0,
+      "min_chunk_jaccard": 1.0,
+      "avg_answer_overlap": 0.9711,
+      "min_answer_overlap": 0.9364,
+      "high_variance": false
+    },
+    {
+      "id": "anti_assignment_000",
+      "question": "Highlight the parts (if any) of this contract related to \"Anti-Assignment\" that should be reviewed by a lawyer. Details:",
+      "category": "Anti-Assignment",
+      "n_valid_runs": 5,
+      "avg_chunk_jaccard": 1.0,
+      "min_chunk_jaccard": 1.0,
+      "avg_answer_overlap": 0.9486,
+      "min_answer_overlap": 0.9022,
+      "high_variance": false
+    }
+  ]
+}

@@ -1,0 +1,927 @@
+{
+  "metadata": {
+    "run_at": "2026-07-22T21:23:18.009160",
+    "n_items": 42,
+    "n_items_with_citations": 31
+  },
+  "aggregate": {
+    "total_citations": 46,
+    "fabricated_citations": 0,
+    "unsupported_citations": 4,
+    "fabricated_citation_rate": 0.0,
+    "unsupported_citation_rate": 0.087
+  },
+  "items": [
+    {
+      "id": "governing_law_000",
+      "category": "Governing Law",
+      "contract_name": "ADAMSGOLFINC_03_21_2005-EX-10.17-ENDORSEMENT AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Governing Law\" that should be reviewed by a lawyer. Details: W",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "ADAMSGOLFINC_03_21_2005-EX-10.17-ENDORSEMENT AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: ADAMSGOLFINC_03_21_2005-EX-10.17-ENDORSEMENT AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "This is stated in the excerpt: \"this agreement shall be governed and construed according to the laws of the state of kansas\" [Source: ADAMSGOLFINC_03_21_2005-EX-10.",
+          "lexical_overlap": 0.44,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "governing_law_001",
+      "category": "Governing Law",
+      "contract_name": "FTENETWORKS,INC_02_18_2016-EX-99.4-STRATEGIC ALLIANCE AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Governing Law\" that should be reviewed by a lawyer. Details: W",
+      "n_citations": 0,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": []
+    },
+    {
+      "id": "governing_law_002",
+      "category": "Governing Law",
+      "contract_name": "DOMINIADVISORTRUST_02_18_2005-EX-99.(H)(2)-SPONSORSHIP AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Governing Law\" that should be reviewed by a lawyer. Details: W",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "DOMINIADVISORTRUST_02_18_2005-EX-99.(H)(2)-SPONSORSHIP AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: DOMINIADVISORTRUST_02_18_2005-EX-99.(H)(2)-SPONSORSHIP AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "This provision is crucial and should be reviewed by a lawyer to ensure compliance with Massachusetts law and to understand its implications for the parties involved in the agreement [Source: DOMINIADV",
+          "lexical_overlap": 0.455,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "governing_law_003",
+      "category": "Governing Law",
+      "contract_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+      "question": "Highlight the parts (if any) of this contract related to \"Governing Law\" that should be reviewed by a lawyer. Details: W",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+          "page_number": "-1",
+          "span": "[Source: CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "shall be governed by, and construed in accordance with, the laws of the state of delaware\" [Source: CerenceInc_20191002_8-K_EX-10.",
+          "lexical_overlap": 0.667,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "governing_law_004",
+      "category": "Governing Law",
+      "contract_name": "BONTONSTORESINC_04_20_2018-EX-99.3-AGENCY AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Governing Law\" that should be reviewed by a lawyer. Details: W",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "BONTONSTORESINC_04_20_2018-EX-99.3-AGENCY AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: BONTONSTORESINC_04_20_2018-EX-99.3-AGENCY AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "Additionally, the parties submit to the exclusive jurisdiction of the bankruptcy court for any actions or proceedings arising out of or relating to the agreement [Source: BONTONSTORESINC_04_20_2018-EX",
+          "lexical_overlap": 0.615,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "governing_law_005",
+      "category": "Governing Law",
+      "contract_name": "BORROWMONEYCOM,INC_06_11_2020-EX-10.1-JOINT VENTURE AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Governing Law\" that should be reviewed by a lawyer. Details: W",
+      "n_citations": 0,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": []
+    },
+    {
+      "id": "governing_law_006",
+      "category": "Governing Law",
+      "contract_name": "ChinaRealEstateInformationCorp_20090929_F-1_EX-10.32_4771615_EX-10.32_Content License Agreement",
+      "question": "Highlight the parts (if any) of this contract related to \"Governing Law\" that should be reviewed by a lawyer. Details: W",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "ChinaRealEstateInformationCorp_20090929_F-1_EX-10.32_4771615_EX-10.32_Content License Agreement",
+          "page_number": "-1",
+          "span": "[Source: ChinaRealEstateInformationCorp_20090929_F-1_EX-10.32_4771615_EX-10.32_Content License Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "This is stated in the excerpt: \"this agreement and any dispute or claim arising out of or in connection with it or its subject matter shall be governed by, and construed in accordance with, the laws o",
+          "lexical_overlap": 0.538,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "cap_on_liability_000",
+      "category": "Cap On Liability",
+      "contract_name": "DOMINIADVISORTRUST_02_18_2005-EX-99.(H)(2)-SPONSORSHIP AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Cap On Liability\" that should be reviewed by a lawyer. Details",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "DOMINIADVISORTRUST_02_18_2005-EX-99.(H)(2)-SPONSORSHIP AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: DOMINIADVISORTRUST_02_18_2005-EX-99.(H)(2)-SPONSORSHIP AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "Specifically, it states that the sponsor shall not be liable for any error of judgment or mistake of law or for any act or omission in the oversight, administration, or management of the trust, except",
+          "lexical_overlap": 0.375,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "cap_on_liability_001",
+      "category": "Cap On Liability",
+      "contract_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+      "question": "Highlight the parts (if any) of this contract related to \"Cap On Liability\" that should be reviewed by a lawyer. Details",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 1,
+      "citations": [
+        {
+          "document_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+          "page_number": "-1",
+          "span": "[Source: CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "This section does not specify a cap on liability or a maximum amount for recovery, nor does it address time limitations for bringing claims [Source: CerenceInc_20191002_8-K_EX-10.",
+          "lexical_overlap": 0.286,
+          "unsupported": true
+        }
+      ]
+    },
+    {
+      "id": "cap_on_liability_002",
+      "category": "Cap On Liability",
+      "contract_name": "CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Cap On Liability\" that should be reviewed by a lawyer. Details",
+      "n_citations": 2,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "Specifically, it states that \"except for liability arising under section 8 of this agreement, in no event shall either party's liability arising out of this agreement or the use or performance of the ",
+          "lexical_overlap": 0.855,
+          "unsupported": false
+        },
+        {
+          "document_name": "CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "Specifically, it states that \"except for liability arising under section 8 of this agreement, in no event shall either party's liability arising out of this agreement or the use or performance of the ",
+          "lexical_overlap": 0.855,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "cap_on_liability_003",
+      "category": "Cap On Liability",
+      "contract_name": "CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Cap On Liability\" that should be reviewed by a lawyer. Details",
+      "n_citations": 2,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "Specifically, it states that \"in no event shall either party's liability arising out of this agreement or the use or performance of the software exceed the total amount actually paid by corio hereunde",
+          "lexical_overlap": 0.843,
+          "unsupported": false
+        },
+        {
+          "document_name": "CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "Specifically, it states that \"in no event shall either party's liability arising out of this agreement or the use or performance of the software exceed the total amount actually paid by corio hereunde",
+          "lexical_overlap": 0.843,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "cap_on_liability_004",
+      "category": "Cap On Liability",
+      "contract_name": "CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Cap On Liability\" that should be reviewed by a lawyer. Details",
+      "n_citations": 2,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "Specifically, it states that \"except for liability arising under section 8 of this agreement, in no event shall either party's liability arising out of this agreement or the use or performance of the ",
+          "lexical_overlap": 0.855,
+          "unsupported": false
+        },
+        {
+          "document_name": "CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "Specifically, it states that \"except for liability arising under section 8 of this agreement, in no event shall either party's liability arising out of this agreement or the use or performance of the ",
+          "lexical_overlap": 0.855,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "cap_on_liability_005",
+      "category": "Cap On Liability",
+      "contract_name": "BNCMORTGAGEINC_05_17_1999-EX-10.4-LICENSING AND WEB SITE HOSTING AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Cap On Liability\" that should be reviewed by a lawyer. Details",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "BNCMORTGAGEINC_05_17_1999-EX-10.4-LICENSING AND WEB SITE HOSTING AGREEMENT",
+          "page_number": "-7",
+          "span": "[Source: BNCMORTGAGEINC_05_17_1999-EX-10.4-LICENSING AND WEB SITE HOSTING AGREEMENT, Page -7]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "Specifically, it states that \"in no event shall truelink's liability for any matter arising under or related to section 3, 4, 7 and 11 of this agreement (other than due to a breach resulting from true",
+          "lexical_overlap": 0.35,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "cap_on_liability_006",
+      "category": "Cap On Liability",
+      "contract_name": "ENERGOUSCORP_03_16_2017-EX-10.24-STRATEGIC ALLIANCE AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Cap On Liability\" that should be reviewed by a lawyer. Details",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "ENERGOUSCORP_03_16_2017-EX-10.24-STRATEGIC ALLIANCE AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: ENERGOUSCORP_03_16_2017-EX-10.24-STRATEGIC ALLIANCE AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "Furthermore, it states that aggregate damages will not exceed a specified amount, which is redacted in the excerpts ([Source: ENERGOUSCORP_03_16_2017-EX-10.",
+          "lexical_overlap": 0.36,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "anti_assignment_000",
+      "category": "Anti-Assignment",
+      "contract_name": "ADAMSGOLFINC_03_21_2005-EX-10.17-ENDORSEMENT AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Anti-Assignment\" that should be reviewed by a lawyer. Details:",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "ADAMSGOLFINC_03_21_2005-EX-10.17-ENDORSEMENT AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: ADAMSGOLFINC_03_21_2005-EX-10.17-ENDORSEMENT AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "The excerpts provided contain a specific clause regarding assignment, which states that \"neither adams golf nor consultant shall have the right to grant sublicenses hereunder or to assign, alienate or",
+          "lexical_overlap": 0.659,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "anti_assignment_001",
+      "category": "Anti-Assignment",
+      "contract_name": "FTENETWORKS,INC_02_18_2016-EX-99.4-STRATEGIC ALLIANCE AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Anti-Assignment\" that should be reviewed by a lawyer. Details:",
+      "n_citations": 0,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": []
+    },
+    {
+      "id": "anti_assignment_002",
+      "category": "Anti-Assignment",
+      "contract_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+      "question": "Highlight the parts (if any) of this contract related to \"Anti-Assignment\" that should be reviewed by a lawyer. Details:",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+          "page_number": "-1",
+          "span": "[Source: CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "In these cases, the assigning party must provide written notice and evidence of such assignment to the non-assigning party, but consent is not required [Source: CerenceInc_20191002_8-K_EX-10.",
+          "lexical_overlap": 0.69,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "anti_assignment_003",
+      "category": "Anti-Assignment",
+      "contract_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+      "question": "Highlight the parts (if any) of this contract related to \"Anti-Assignment\" that should be reviewed by a lawyer. Details:",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+          "page_number": "-1",
+          "span": "[Source: CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "However, if a party enters into a consolidation or merger transaction where it is not the surviving entity, or transfers all or substantially all of its assets, it may assign the agreement to its affi",
+          "lexical_overlap": 0.755,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "anti_assignment_004",
+      "category": "Anti-Assignment",
+      "contract_name": "BONTONSTORESINC_04_20_2018-EX-99.3-AGENCY AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Anti-Assignment\" that should be reviewed by a lawyer. Details:",
+      "n_citations": 2,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "BONTONSTORESINC_04_20_2018-EX-99.3-AGENCY AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: BONTONSTORESINC_04_20_2018-EX-99.3-AGENCY AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "The agreement states that \"this agreement may not be assigned by any of the parties without the prior written consent of the other\" [Source: BONTONSTORESINC_04_20_2018-EX-99.",
+          "lexical_overlap": 0.48,
+          "unsupported": false
+        },
+        {
+          "document_name": "BONTONSTORESINC_04_20_2018-EX-99.3-AGENCY AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: BONTONSTORESINC_04_20_2018-EX-99.3-AGENCY AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "The agreement states that \"this agreement may not be assigned by any of the parties without the prior written consent of the other\" [Source: BONTONSTORESINC_04_20_2018-EX-99.",
+          "lexical_overlap": 0.48,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "anti_assignment_005",
+      "category": "Anti-Assignment",
+      "contract_name": "BORROWMONEYCOM,INC_06_11_2020-EX-10.1-JOINT VENTURE AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Anti-Assignment\" that should be reviewed by a lawyer. Details:",
+      "n_citations": 0,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": []
+    },
+    {
+      "id": "anti_assignment_006",
+      "category": "Anti-Assignment",
+      "contract_name": "ChinaRealEstateInformationCorp_20090929_F-1_EX-10.32_4771615_EX-10.32_Content License Agreement",
+      "question": "Highlight the parts (if any) of this contract related to \"Anti-Assignment\" that should be reviewed by a lawyer. Details:",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "ChinaRealEstateInformationCorp_20090929_F-1_EX-10.32_4771615_EX-10.32_Content License Agreement",
+          "page_number": "-1",
+          "span": "[Source: ChinaRealEstateInformationCorp_20090929_F-1_EX-10.32_4771615_EX-10.32_Content License Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "However, there are exceptions: the licensor may assign the agreement without consent to any of its affiliates, and the licensee may assign it without consent to Sina Leju or an affiliate of the licens",
+          "lexical_overlap": 0.486,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "audit_rights_000",
+      "category": "Audit Rights",
+      "contract_name": "FTENETWORKS,INC_02_18_2016-EX-99.4-STRATEGIC ALLIANCE AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Audit Rights\" that should be reviewed by a lawyer. Details: Do",
+      "n_citations": 0,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": []
+    },
+    {
+      "id": "audit_rights_001",
+      "category": "Audit Rights",
+      "contract_name": "BONTONSTORESINC_04_20_2018-EX-99.3-AGENCY AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Audit Rights\" that should be reviewed by a lawyer. Details: Do",
+      "n_citations": 0,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": []
+    },
+    {
+      "id": "audit_rights_002",
+      "category": "Audit Rights",
+      "contract_name": "BONTONSTORESINC_04_20_2018-EX-99.3-AGENCY AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Audit Rights\" that should be reviewed by a lawyer. Details: Do",
+      "n_citations": 0,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": []
+    },
+    {
+      "id": "audit_rights_003",
+      "category": "Audit Rights",
+      "contract_name": "BORROWMONEYCOM,INC_06_11_2020-EX-10.1-JOINT VENTURE AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Audit Rights\" that should be reviewed by a lawyer. Details: Do",
+      "n_citations": 0,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": []
+    },
+    {
+      "id": "audit_rights_004",
+      "category": "Audit Rights",
+      "contract_name": "CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Audit Rights\" that should be reviewed by a lawyer. Details: Do",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 1,
+      "citations": [
+        {
+          "document_name": "CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "[Source: CORIOINC_07_20_2000-EX-10.",
+          "lexical_overlap": 0.0,
+          "unsupported": true
+        }
+      ]
+    },
+    {
+      "id": "audit_rights_005",
+      "category": "Audit Rights",
+      "contract_name": "CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Audit Rights\" that should be reviewed by a lawyer. Details: Do",
+      "n_citations": 0,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": []
+    },
+    {
+      "id": "audit_rights_006",
+      "category": "Audit Rights",
+      "contract_name": "ENERGOUSCORP_03_16_2017-EX-10.24-STRATEGIC ALLIANCE AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Audit Rights\" that should be reviewed by a lawyer. Details: Do",
+      "n_citations": 3,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "ENERGOUSCORP_03_16_2017-EX-10.24-STRATEGIC ALLIANCE AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: ENERGOUSCORP_03_16_2017-EX-10.24-STRATEGIC ALLIANCE AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "The relevant sections are as follows:\n\n- \"Energous may appoint a mutually agreed independent, internationally recognized third-party certified auditor who will have the right to inspect and copy the r",
+          "lexical_overlap": 0.769,
+          "unsupported": false
+        },
+        {
+          "document_name": "ENERGOUSCORP_03_16_2017-EX-10.24-STRATEGIC ALLIANCE AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: ENERGOUSCORP_03_16_2017-EX-10.24-STRATEGIC ALLIANCE AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "The relevant sections are as follows:\n\n- \"Energous may appoint a mutually agreed independent, internationally recognized third-party certified auditor who will have the right to inspect and copy the r",
+          "lexical_overlap": 0.769,
+          "unsupported": false
+        },
+        {
+          "document_name": "ENERGOUSCORP_03_16_2017-EX-10.24-STRATEGIC ALLIANCE AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: ENERGOUSCORP_03_16_2017-EX-10.24-STRATEGIC ALLIANCE AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "The relevant sections are as follows:\n\n- \"Energous may appoint a mutually agreed independent, internationally recognized third-party certified auditor who will have the right to inspect and copy the r",
+          "lexical_overlap": 0.769,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "expiration_date_000",
+      "category": "Expiration Date",
+      "contract_name": "ADAMSGOLFINC_03_21_2005-EX-10.17-ENDORSEMENT AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Expiration Date\" that should be reviewed by a lawyer. Details:",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 1,
+      "citations": [
+        {
+          "document_name": "ADAMSGOLFINC_03_21_2005-EX-10.17-ENDORSEMENT AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: ADAMSGOLFINC_03_21_2005-EX-10.17-ENDORSEMENT AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "[Source: ADAMSGOLFINC_03_21_2005-EX-10.",
+          "lexical_overlap": 0.0,
+          "unsupported": true
+        }
+      ]
+    },
+    {
+      "id": "expiration_date_001",
+      "category": "Expiration Date",
+      "contract_name": "FTENETWORKS,INC_02_18_2016-EX-99.4-STRATEGIC ALLIANCE AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Expiration Date\" that should be reviewed by a lawyer. Details:",
+      "n_citations": 0,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": []
+    },
+    {
+      "id": "expiration_date_002",
+      "category": "Expiration Date",
+      "contract_name": "DOMINIADVISORTRUST_02_18_2005-EX-99.(H)(2)-SPONSORSHIP AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Expiration Date\" that should be reviewed by a lawyer. Details:",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "DOMINIADVISORTRUST_02_18_2005-EX-99.(H)(2)-SPONSORSHIP AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: DOMINIADVISORTRUST_02_18_2005-EX-99.(H)(2)-SPONSORSHIP AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "The agreement states that it shall become effective as of the day and year first above written and will govern the relations between the parties unless terminated as set forth in the agreement, but it",
+          "lexical_overlap": 0.614,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "expiration_date_003",
+      "category": "Expiration Date",
+      "contract_name": "Freecook_20180605_S-1_EX-10.3_11233807_EX-10.3_Hosting Agreement",
+      "question": "Highlight the parts (if any) of this contract related to \"Expiration Date\" that should be reviewed by a lawyer. Details:",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "Freecook_20180605_S-1_EX-10.3_11233807_EX-10.3_Hosting Agreement",
+          "page_number": "-1",
+          "span": "[Source: Freecook_20180605_S-1_EX-10.3_11233807_EX-10.3_Hosting Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "[Source: Freecook_20180605_S-1_EX-10.",
+          "lexical_overlap": 0.429,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "expiration_date_004",
+      "category": "Expiration Date",
+      "contract_name": "BORROWMONEYCOM,INC_06_11_2020-EX-10.1-JOINT VENTURE AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Expiration Date\" that should be reviewed by a lawyer. Details:",
+      "n_citations": 0,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": []
+    },
+    {
+      "id": "expiration_date_005",
+      "category": "Expiration Date",
+      "contract_name": "ChinaRealEstateInformationCorp_20090929_F-1_EX-10.32_4771615_EX-10.32_Content License Agreement",
+      "question": "Highlight the parts (if any) of this contract related to \"Expiration Date\" that should be reviewed by a lawyer. Details:",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "ChinaRealEstateInformationCorp_20090929_F-1_EX-10.32_4771615_EX-10.32_Content License Agreement",
+          "page_number": "-1",
+          "span": "[Source: ChinaRealEstateInformationCorp_20090929_F-1_EX-10.32_4771615_EX-10.32_Content License Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "It is advisable for a lawyer to review the effective date and any related provisions to ascertain the precise expiration date of the contract's initial term [Source: ChinaRealEstateInformationCorp_200",
+          "lexical_overlap": 0.533,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "expiration_date_006",
+      "category": "Expiration Date",
+      "contract_name": "GLOBALTECHNOLOGIESLTD_06_08_2020-EX-10.16-CONSULTING AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"Expiration Date\" that should be reviewed by a lawyer. Details:",
+      "n_citations": 1,
+      "n_fabricated": 0,
+      "n_unsupported": 1,
+      "citations": [
+        {
+          "document_name": "GLOBALTECHNOLOGIESLTD_06_08_2020-EX-10.16-CONSULTING AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: GLOBALTECHNOLOGIESLTD_06_08_2020-EX-10.16-CONSULTING AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "\" [Source: GLOBALTECHNOLOGIESLTD_06_08_2020-EX-10.",
+          "lexical_overlap": 0.0,
+          "unsupported": true
+        }
+      ]
+    },
+    {
+      "id": "license_grant_000",
+      "category": "License Grant",
+      "contract_name": "ADAMSGOLFINC_03_21_2005-EX-10.17-ENDORSEMENT AGREEMENT",
+      "question": "Highlight the parts (if any) of this contract related to \"License Grant\" that should be reviewed by a lawyer. Details: D",
+      "n_citations": 2,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "ADAMSGOLFINC_03_21_2005-EX-10.17-ENDORSEMENT AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: ADAMSGOLFINC_03_21_2005-EX-10.17-ENDORSEMENT AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "This is outlined in Excerpt 2, where it mentions, \"consultant hereby gives and grants to adams golf the exclusive right and license to use consultant's endorsement in connection with the manufacture, ",
+          "lexical_overlap": 0.405,
+          "unsupported": false
+        },
+        {
+          "document_name": "ADAMSGOLFINC_03_21_2005-EX-10.17-ENDORSEMENT AGREEMENT",
+          "page_number": "-1",
+          "span": "[Source: ADAMSGOLFINC_03_21_2005-EX-10.17-ENDORSEMENT AGREEMENT, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "This is outlined in Excerpt 2, where it mentions, \"consultant hereby gives and grants to adams golf the exclusive right and license to use consultant's endorsement in connection with the manufacture, ",
+          "lexical_overlap": 0.405,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "license_grant_001",
+      "category": "License Grant",
+      "contract_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+      "question": "Highlight the parts (if any) of this contract related to \"License Grant\" that should be reviewed by a lawyer. Details: D",
+      "n_citations": 3,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+          "page_number": "-1",
+          "span": "[Source: CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "It states that the licenses include the right to grant sublicenses within the scope of such licenses to members of the spinco group and certain other parties, under specific conditions [Source: Cerenc",
+          "lexical_overlap": 0.484,
+          "unsupported": false
+        },
+        {
+          "document_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+          "page_number": "-1",
+          "span": "[Source: CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "It states that the licenses include the right to grant sublicenses within the scope of such licenses to members of the spinco group and certain other parties, under specific conditions [Source: Cerenc",
+          "lexical_overlap": 0.484,
+          "unsupported": false
+        },
+        {
+          "document_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+          "page_number": "-1",
+          "span": "[Source: CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "It states that the licenses include the right to grant sublicenses within the scope of such licenses to members of the spinco group and certain other parties, under specific conditions [Source: Cerenc",
+          "lexical_overlap": 0.484,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "license_grant_002",
+      "category": "License Grant",
+      "contract_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+      "question": "Highlight the parts (if any) of this contract related to \"License Grant\" that should be reviewed by a lawyer. Details: D",
+      "n_citations": 2,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+          "page_number": "-1",
+          "span": "[Source: CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "01 mentions that the licenses granted include rights to sublicense within certain parameters, particularly to members of the spinco group and their contractors, distributors, manufacturers, and resell",
+          "lexical_overlap": 0.457,
+          "unsupported": false
+        },
+        {
+          "document_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+          "page_number": "-1",
+          "span": "[Source: CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "01 mentions that the licenses granted include rights to sublicense within certain parameters, particularly to members of the spinco group and their contractors, distributors, manufacturers, and resell",
+          "lexical_overlap": 0.457,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "license_grant_003",
+      "category": "License Grant",
+      "contract_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+      "question": "Highlight the parts (if any) of this contract related to \"License Grant\" that should be reviewed by a lawyer. Details: D",
+      "n_citations": 2,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+          "page_number": "-1",
+          "span": "[Source: CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "01 mentions that the licenses granted include rights to sublicense within certain parameters, particularly to members of the spinco group and their contractors, distributors, manufacturers, and resell",
+          "lexical_overlap": 0.457,
+          "unsupported": false
+        },
+        {
+          "document_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+          "page_number": "-1",
+          "span": "[Source: CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "01 mentions that the licenses granted include rights to sublicense within certain parameters, particularly to members of the spinco group and their contractors, distributors, manufacturers, and resell",
+          "lexical_overlap": 0.457,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "license_grant_004",
+      "category": "License Grant",
+      "contract_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+      "question": "Highlight the parts (if any) of this contract related to \"License Grant\" that should be reviewed by a lawyer. Details: D",
+      "n_citations": 2,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+          "page_number": "-1",
+          "span": "[Source: CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "01 mentions that the licenses granted include rights to sublicense within certain parameters, particularly to members of the spinco group and their contractors, distributors, manufacturers, and resell",
+          "lexical_overlap": 0.457,
+          "unsupported": false
+        },
+        {
+          "document_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+          "page_number": "-1",
+          "span": "[Source: CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "01 mentions that the licenses granted include rights to sublicense within certain parameters, particularly to members of the spinco group and their contractors, distributors, manufacturers, and resell",
+          "lexical_overlap": 0.457,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "license_grant_005",
+      "category": "License Grant",
+      "contract_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+      "question": "Highlight the parts (if any) of this contract related to \"License Grant\" that should be reviewed by a lawyer. Details: D",
+      "n_citations": 3,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+          "page_number": "-1",
+          "span": "[Source: CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "01(a), (b), and (c) to the spinco group include the right to grant sublicenses within the scope of such licenses to members of the spinco group and certain other entities, provided that these sublicen",
+          "lexical_overlap": 0.583,
+          "unsupported": false
+        },
+        {
+          "document_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+          "page_number": "-1",
+          "span": "[Source: CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "01(a), (b), and (c) to the spinco group include the right to grant sublicenses within the scope of such licenses to members of the spinco group and certain other entities, provided that these sublicen",
+          "lexical_overlap": 0.583,
+          "unsupported": false
+        },
+        {
+          "document_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+          "page_number": "-1",
+          "span": "[Source: CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "01(a), (b), and (c) to the spinco group include the right to grant sublicenses within the scope of such licenses to members of the spinco group and certain other entities, provided that these sublicen",
+          "lexical_overlap": 0.583,
+          "unsupported": false
+        }
+      ]
+    },
+    {
+      "id": "license_grant_006",
+      "category": "License Grant",
+      "contract_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+      "question": "Highlight the parts (if any) of this contract related to \"License Grant\" that should be reviewed by a lawyer. Details: D",
+      "n_citations": 2,
+      "n_fabricated": 0,
+      "n_unsupported": 0,
+      "citations": [
+        {
+          "document_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+          "page_number": "-1",
+          "span": "[Source: CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "01 mentions that the licenses granted include rights to sublicense within certain parameters, particularly to members of the spinco group and their contractors, distributors, manufacturers, and resell",
+          "lexical_overlap": 0.457,
+          "unsupported": false
+        },
+        {
+          "document_name": "CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement",
+          "page_number": "-1",
+          "span": "[Source: CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement, Page -1]",
+          "in_retrieved_context": true,
+          "fabricated": false,
+          "sentence": "01 mentions that the licenses granted include rights to sublicense within certain parameters, particularly to members of the spinco group and their contractors, distributors, manufacturers, and resell",
+          "lexical_overlap": 0.457,
+          "unsupported": false
+        }
+      ]
+    }
+  ]
+}
