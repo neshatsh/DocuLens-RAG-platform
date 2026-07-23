@@ -143,3 +143,35 @@ class VectorStore:
                 seen.add(doc_id)
                 docs.append(doc_id)
         return docs
+
+    def list_document_names(self) -> List[str]:
+        """Return unique document_names stored in this collection."""
+        results = self.collection.get(include=["metadatas"])
+        seen: set = set()
+        names = []
+        for meta in results["metadatas"]:
+            name = meta.get("document_name", "")
+            if name and name not in seen:
+                seen.add(name)
+                names.append(name)
+        return names
+
+    def get_document_id_by_name(self, document_name: str) -> Optional[str]:
+        """Return the document_id for a given document_name, or None if not found."""
+        results = self.collection.get(
+            where={"document_name": document_name},
+            include=["metadatas"],
+            limit=1,
+        )
+        if results["metadatas"]:
+            return results["metadatas"][0].get("document_id")
+        return None
+
+    def clear(self) -> None:
+        """Delete and recreate the collection, wiping all data."""
+        self.client.delete_collection(self.collection_name)
+        self.collection = self.client.get_or_create_collection(
+            name=self.collection_name,
+            metadata={"hnsw:space": "cosine"},
+        )
+        logger.info(f"Cleared collection '{self.collection_name}'")

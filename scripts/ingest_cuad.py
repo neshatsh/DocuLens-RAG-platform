@@ -1,103 +1,129 @@
 """
-Download and ingest the CUAD dataset (Contract Understanding Atticus Dataset).
-500 real legal contracts across multiple categories.
-Run: python scripts/ingest_cuad.py
+Ingest full CUAD v1 contract text files into ChromaDB.
+
+Data source: data/cuad_v1/full_contract_txt/ (official Atticus Project release).
+Download first:  python scripts/download_cuad_v1.py
+
+Run: python scripts/ingest_cuad.py [--max 200] [--clear]
 """
 from __future__ import annotations
 import argparse
+import hashlib
 import sys
 from pathlib import Path
 
-# Allow running as `python scripts/ingest_cuad.py` from the project root
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from datasets import load_dataset
 from src.utils.logger import logger
-from src.utils.config import get_settings
 
-settings = get_settings()
+DEFAULT_TXT_DIR = Path("data/cuad_v1/full_contract_txt")
+DEFAULT_COLLECTION = "cuad_v1"
 
 
-def download_cuad_texts(output_dir: Path, max_contracts: int = 50) -> list[Path]:
+def _find_txt_dir(base: Path) -> Path | None:
+    """Locate full_contract_txt/ regardless of zip extraction depth."""
+    for candidate in sorted(base.rglob("full_contract_txt")):
+        if candidate.is_dir() and any(candidate.glob("*.txt")):
+            return candidate
+    return None
+
+
+def collect_contract_files(txt_dir: Path, max_contracts: int) -> list[Path]:
+    """Return up to max_contracts .txt paths, sorted for reproducibility.
+
+    If txt_dir doesn't exist or is empty, auto-discovers full_contract_txt/
+    under data/cuad_v1/ (handles nested zip extraction layout).
     """
-    Download CUAD from HuggingFace and save contract texts as text files.
-    (CUAD provides raw text, not PDFs — we save as .txt and treat as plain documents.)
+    resolved = txt_dir
+    if not txt_dir.exists() or not any(txt_dir.glob("*.txt")):
+        auto = _find_txt_dir(Path("data/cuad_v1"))
+        if auto is not None:
+            logger.info(f"Auto-discovered txt dir: {auto}")
+            resolved = auto
+        else:
+            raise FileNotFoundError(
+                f"No .txt files found in {txt_dir} or data/cuad_v1/.\n"
+                "Run:  python scripts/download_cuad_v1.py"
+            )
+    return sorted(resolved.glob("*.txt"))[:max_contracts]
+
+
+def ingest_text_files(file_paths: list[Path], collection_name: str = DEFAULT_COLLECTION) -> int:
     """
-    logger.info("Loading CUAD dataset from HuggingFace...")
-    dataset = load_dataset("theatticusproject/cuad", split="train", trust_remote_code=True)
+    Ingest full contract .txt files through the existing pipeline:
+    clean -> chunk -> embed -> store.
 
-    output_dir.mkdir(parents=True, exist_ok=True)
-    saved_files = []
-
-    for item in dataset:
-        # The theatticusproject/cuad dataset has a single "text" column containing
-        # contract passages; there is no separate "title" or "context" field.
-        text = item.get("text") or item.get("context", "")
-        if len(text) < 500:
-            continue
-
-        idx = len(saved_files)
-        out_path = output_dir / f"cuad_{idx:04d}.txt"
-        out_path.write_text(text, encoding="utf-8")
-        saved_files.append(out_path)
-
-        if len(saved_files) >= max_contracts:
-            break
-
-    logger.info(f"Saved {len(saved_files)} contracts to {output_dir}")
-    return saved_files
-
-
-def ingest_text_files(file_paths: list[Path]) -> None:
-    """
-    Ingest plain text contracts through a simplified pipeline
-    (skips PDF extraction, goes straight to clean -> chunk -> embed -> store).
+    Uses path.stem as document_name so it matches CUAD-QA title format
+    exactly (e.g. "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT").
+    Returns total chunks stored.
     """
     from src.ingestion.text_cleaner import TextCleaner
-    from src.ingestion.chunker import SemanticChunker, TextChunk
+    from src.ingestion.chunker import SemanticChunker
     from src.ingestion.embedder import Embedder
     from src.retrieval.vector_store import VectorStore
-    import hashlib
 
     cleaner = TextCleaner()
     chunker = SemanticChunker()
     embedder = Embedder()
-    store = VectorStore()
+    store = VectorStore(collection_name=collection_name)
 
+    total_chunks = 0
     for i, path in enumerate(file_paths):
-        logger.info(f"[{i+1}/{len(file_paths)}] Ingesting: {path.name}")
+        contract_name = path.stem  # no .txt — matches CUAD-QA title exactly
+        doc_id = hashlib.md5(contract_name.encode()).hexdigest()[:16]
+        logger.info(f"[{i+1}/{len(file_paths)}] Ingesting: {contract_name}")
+
         text = path.read_text(encoding="utf-8", errors="replace")
         cleaned = cleaner.clean(text)
         if not cleaned.strip():
             logger.warning(f"  Skipping empty: {path.name}")
             continue
 
-        doc_id = hashlib.md5(str(path).encode()).hexdigest()[:16]
         chunks = chunker.chunk_document(
             text=cleaned,
             document_id=doc_id,
-            document_name=path.name,
-            metadata={"source": "CUAD", "file": path.name},
+            document_name=contract_name,
+            metadata={"source": "CUAD_v1", "file": path.name},
         )
         if not chunks:
+            logger.warning(f"  No chunks produced for: {path.name}")
             continue
 
         _, embeddings = embedder.embed_chunks(chunks)
         store.add_chunks(chunks, embeddings)
+        total_chunks += len(chunks)
         logger.info(f"  -> {len(chunks)} chunks stored")
 
-    logger.info(f"Done. Total chunks in store: {store.count()}")
+    logger.info(f"Done. Total chunks added: {total_chunks} | Store total: {store.count()}")
+    return total_chunks
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Download and ingest CUAD contracts")
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Ingest CUAD v1 full contracts into ChromaDB")
     parser.add_argument("--max", type=int, default=50, help="Max contracts to ingest")
-    parser.add_argument("--output-dir", type=str, default="data/raw/cuad")
+    parser.add_argument(
+        "--txt-dir", type=str, default=str(DEFAULT_TXT_DIR),
+        help="Directory containing CUAD v1 .txt files",
+    )
+    parser.add_argument(
+        "--collection", type=str, default=DEFAULT_COLLECTION,
+        help="ChromaDB collection name (default: cuad_v1, separate from API collection)",
+    )
+    parser.add_argument(
+        "--clear", action="store_true",
+        help="Wipe the collection before ingesting (use for a fresh benchmark run)",
+    )
     args = parser.parse_args()
 
-    output_dir = Path(args.output_dir)
-    files = download_cuad_texts(output_dir, max_contracts=args.max)
-    ingest_text_files(files)
+    if args.clear:
+        from src.retrieval.vector_store import VectorStore
+        store = VectorStore(collection_name=args.collection)
+        store.clear()
+
+    txt_dir = Path(args.txt_dir)
+    files = collect_contract_files(txt_dir, max_contracts=args.max)
+    logger.info(f"Ingesting {len(files)} contracts from {txt_dir}")
+    ingest_text_files(files, collection_name=args.collection)
 
 
 if __name__ == "__main__":
